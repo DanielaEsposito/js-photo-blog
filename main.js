@@ -20,7 +20,19 @@ fetch(`https://jsonplaceholder.typicode.com/photos?_limit=6"`)
          </div>`
         
     });
+    //raccolta dati per eventListner
+    const singleCard = document.querySelectorAll('#container-cards .single-card');
+    const overlay = document.getElementById("overlay");
+    const btnClose=document.getElementById("btn-close");
     
-
-
+    singleCard.forEach((card) => {
+    //console.log(card);
+    card.addEventListener("click", function() {
+    overlay.classList.remove("d-none")
+    })
+    })
+    btnClose.addEventListener("click",()=>{
+        overlay.classList.add("d-none");
+    })
 } )
+

@@ -32,7 +32,7 @@ img {
   padding-top: 40px;
 }
 .cards-container {
-  padding: 20px;
+  padding: 50px;
   /*debug*/
   /*background-color: rgb(255, 255, 255);
     height: 600px;*/
@@ -82,13 +82,11 @@ img {
    
 }
 .img-container{
-  width: 200px;
-  height: 200px;
-  background-color: aqua;
+ 
   position: absolute;
   right: 50%;
   transform: translate(50%,-50%);
-  top: 300px;
+  top: 400px;
 
 }
 
