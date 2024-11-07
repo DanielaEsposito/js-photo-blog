@@ -7,19 +7,18 @@
   font-family: "Sniglet", system-ui;
   font-weight: 400;
   font-style: normal;
- 
 }
 
 img {
   width: 100%;
   height: 100%;
 }
+
 /*HEADER*/
 .header-container {
   width: 100%;
   background-image: url(../img/wall.png);
   height: 150px;
-  
 }
 .title {
   font-size: 5rem;
@@ -27,26 +26,41 @@ img {
   line-height: 140px;
 }
 /*POSTIT-SECTION*/
-#postit{
-    height: 100%;
-    background-image: url(../img/cork.png);
-    padding-top: 40px;
+#postit {
+  height: 100%;
+  background-image: url(../img/cork.png);
+  padding-top: 40px;
 }
-.cards-container{
-    padding: 20px;
-    /*debug*/
-    /*background-color: rgb(255, 255, 255);
+.cards-container {
+  padding: 20px;
+  /*debug*/
+  /*background-color: rgb(255, 255, 255);
     height: 600px;*/
 }
 /*CARDS*/
-.single-card{
-    margin:0px auto;
-    background-color: lightgray;
-    padding: 20px;
-    height: 450px;
-    box-shadow: 1px 1px 1px 1px rgb(54, 53, 53);
+.single-card {
+  margin: 0px auto;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  height: 100%;
+  box-shadow: 1px 1px 1px 1px rgb(54, 53, 53);
+  position: relative;
+}
+.single-card::after {
+  content: url("../img/pin.svg");
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, -50%);
+  top: 5px;
+  z-index: 1;
+}
+.card-description {
+  padding: 10px 0px;
 }
 
-.card-description{
-    padding: 10px 0px;
+/*MEDIA QUESRY*/
+@media screen and (max-width: 450px) {
+  .cards-container{
+    padding: 55px;
+  }
 }
