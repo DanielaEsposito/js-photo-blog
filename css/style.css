@@ -18,37 +18,35 @@ img {
 .header-container {
   width: 100%;
   background-image: url(../img/wall.png);
-  height: 100px;
+  height: 150px;
   
 }
 .title {
   font-size: 5rem;
   text-transform: uppercase;
-  line-height: 95px;
+  line-height: 140px;
 }
 /*POSTIT-SECTION*/
 #postit{
-    height: 100vh;
+    height: 100%;
     background-image: url(../img/cork.png);
-    padding-top: 60px;
+    padding-top: 40px;
 }
 .cards-container{
     padding: 20px;
     /*debug*/
-    background-color: lightblue;
-    height: 600px;
+    /*background-color: rgb(255, 255, 255);
+    height: 600px;*/
 }
 /*CARDS*/
 .single-card{
     margin:0px auto;
     background-color: lightgray;
     padding: 20px;
-    width: 350px; 
+    height: 450px;
+    box-shadow: 1px 1px 1px 1px rgb(54, 53, 53);
 }
-.single-card-img{
-background-color: aqua;
-height: 350px;
-}
+
 .card-description{
     padding: 10px 0px;
 }
