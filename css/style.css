@@ -12,6 +12,7 @@
 
 img {
   width: 100%;
+  height: 100%;
 }
 /*HEADER*/
 .header-container {
@@ -21,9 +22,9 @@ img {
   
 }
 .title {
-  font-size: 3rem;
+  font-size: 5rem;
   text-transform: uppercase;
-  line-height: 90px;
+  line-height: 95px;
 }
 /*POSTIT-SECTION*/
 #postit{
@@ -31,9 +32,23 @@ img {
     background-image: url(../img/cork.png);
     padding-top: 60px;
 }
-.card-container{
-   
+.cards-container{
+    padding: 20px;
     /*debug*/
     background-color: lightblue;
     height: 600px;
+}
+/*CARDS*/
+.single-card{
+    margin:0px auto;
+    background-color: lightgray;
+    padding: 20px;
+    width: 350px; 
+}
+.single-card-img{
+background-color: aqua;
+height: 350px;
+}
+.card-description{
+    padding: 10px 0px;
 }
