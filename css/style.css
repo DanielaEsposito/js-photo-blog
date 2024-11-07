@@ -1,11 +1,39 @@
 /* RESET*/
 * {
-    box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  /*google font*/
+  font-family: "Sniglet", system-ui;
+  font-weight: 400;
+  font-style: normal;
+ 
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
-
+/*HEADER*/
+.header-container {
+  width: 100%;
+  background-image: url(../img/wall.png);
+  height: 100px;
+  
+}
+.title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 90px;
+}
+/*POSTIT-SECTION*/
+#postit{
+    height: 100vh;
+    background-image: url(../img/cork.png);
+    padding-top: 60px;
+}
+.card-container{
+   
+    /*debug*/
+    background-color: lightblue;
+    height: 600px;
+}
