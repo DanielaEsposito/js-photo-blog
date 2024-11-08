@@ -26,11 +26,22 @@ fetch(`https://jsonplaceholder.typicode.com/photos?_limit=6"`)
     const btnClose=document.getElementById("btn-close");
     const overlayImg = document.getElementById("img-overlay")
     
-    singleCard.forEach((card) => {
+    singleCard.forEach((card, i) => {
          //console.log(card);
    
+         if (i %2 === 0){
+            card.classList.add("right");
+            card.classList.remove("left");
+        }
+        else{
+            card.classList.add("left");
+            card.classList.remove("right");
+        }
+
+         
     card.addEventListener("click", function () {
          //console.log(this);
+         
     overlayImg.innerHTML=``;   
     overlay.classList.remove("d-none");
     const url = this.querySelector("img").getAttribute('data-url');
