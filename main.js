@@ -28,7 +28,7 @@ fetch(`https://jsonplaceholder.typicode.com/photos?_limit=6"`)
     
     singleCard.forEach((card, i) => {
          //console.log(card);
-   
+         //assegnazione classi per elementi pari e dispari 
          if (i %2 === 0){
             card.classList.add("right");
             card.classList.remove("left");
