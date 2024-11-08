@@ -1,5 +1,5 @@
 //preparazione dati
-const cardConatainer= document.getElementById("container-cards");
+const cardContainer= document.getElementById("container-cards");
 
 //chiamata API
 
@@ -9,7 +9,7 @@ fetch(`https://jsonplaceholder.typicode.com/photos?_limit=6"`)
     //console.log(card);
     cards.forEach((card) => {
 
-        cardConatainer.innerHTML +=`
+        cardContainer.innerHTML +=`
         <div class="col-12 col-md-6 col-lg-4  p-3">
              <div class="single-card">
                  <div class="single-card-img">
@@ -45,5 +45,6 @@ fetch(`https://jsonplaceholder.typicode.com/photos?_limit=6"`)
         
         
     })
+    
 } )
 
