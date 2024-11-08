@@ -57,14 +57,13 @@ img {
 .card-description {
   padding: 10px 0px;
 }
-.single-card:hover{
+.single-card:hover {
   transform: rotate(20deg);
-  transition-duration:0.5s;
+  transition-duration: 0.5s;
   z-index: 1;
-  
 }
 /*OVERLAY*/
-#overlay{
+#overlay {
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -75,25 +74,24 @@ img {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.718);
 }
-.overlay-container{
-  margin: 100px auto;
-  text-align: center;
-  position: relative;
-   
-}
-.img-container{
+.overlay-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  
  
-  position: absolute;
-  right: 50%;
-  transform: translate(50%,-50%);
-  top: 400px;
-
 }
-
+.img-container {
+  width: 600px;
+  height: 600px;
+  
+}
 
 /*MEDIA QUESRY*/
 @media screen and (max-width: 450px) {
-  .cards-container{
+  .cards-container {
     padding: 55px;
   }
 }
